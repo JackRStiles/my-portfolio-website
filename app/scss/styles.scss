@@ -1,16 +1,15 @@
+@import 'partials/animations';
 @import 'partials/colors';
 @import 'partials/hero';
 @import 'partials/navbar';
 
 .section {
-    text-align: center;
+    text-align: left;
 
     p {
         margin-bottom: 1.25rem;
     }
 }
-
-.about {}
 
 .skills {
     .skill {
