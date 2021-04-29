@@ -1,0 +1,30 @@
+@import 'partials/colors';
+@import 'partials/hero';
+@import 'partials/navbar';
+
+.section {
+    text-align: center;
+
+    p {
+        margin-bottom: 1.25rem;
+    }
+}
+
+.about {}
+
+.skills {
+    .skill {
+        text-align: left;
+
+        span {
+            float: right;
+            color: $brand-color;
+        }
+    }
+}
+
+.education {
+    .location {
+        color: $brand-color;
+    }
+}

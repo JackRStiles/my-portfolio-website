@@ -1,0 +1,64 @@
+.is-brand {
+  background: #004ba8; }
+
+.is-brand-gradient {
+  background: #004ba8;
+  background: linear-gradient(0deg, #004ba8, #0062db); }
+
+.is-font-brand-gradient {
+  color: #004ba8;
+  color: linear-gradient(0deg, #004ba8, #0062db); }
+
+.hero {
+  height: 75vh; }
+  .hero .background-text {
+    position: absolute;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    z-index: 0; }
+    .hero .background-text p {
+      margin: auto;
+      text-align: center;
+      font-size: 30rem;
+      color: rgba(255, 255, 255, 0.05);
+      font-weight: bold;
+      line-height: 1; }
+  .hero .hero-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1; }
+  .hero .title {
+    color: #fff; }
+  .hero .subtitle {
+    color: #fff; }
+
+.navbar .navbar-item,
+.navbar .navbar-link {
+  color: #fff; }
+
+.navbar .navbar-link.is-active,
+.navbar .navbar-link:focus,
+.navbar .navbar-link:focus-within,
+.navbar .navbar-link:hover,
+.navbar a.navbar-item.is-active,
+.navbar a.navbar-item:focus,
+.navbar a.navbar-item:focus-within,
+.navbar a.navbar-item:hover {
+  background: rgba(0, 0, 0, 0.25);
+  color: #fff; }
+
+.section {
+  text-align: center; }
+  .section p {
+    margin-bottom: 1.25rem; }
+
+.skills .skill {
+  text-align: left; }
+  .skills .skill span {
+    float: right;
+    color: #004ba8; }
+
+.education .location {
+  color: #004ba8; }

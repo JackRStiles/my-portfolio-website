@@ -1,0 +1,19 @@
+$brand-color : #004ba8;
+$brand-color-shade : #0062db;
+
+$font-color-dark : #000;
+$font-color-white : #fff;
+
+.is-brand {
+    background: $brand-color;
+}
+
+.is-brand-gradient {
+    background: $brand-color;
+    background: linear-gradient(0deg, $brand-color, $brand-color-shade);
+}
+
+.is-font-brand-gradient {
+    color: $brand-color;
+    color: linear-gradient(0deg, $brand-color, $brand-color-shade);
+}
