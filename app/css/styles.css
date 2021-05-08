@@ -86,11 +86,24 @@
   .section p {
     margin-bottom: 1.25rem; }
 
-.skills .skill {
-  text-align: left; }
-  .skills .skill span {
-    float: right;
-    color: #004ba8; }
+.skills .skill-container {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .skills .skill-container .skill {
+    background: rgba(0, 75, 168, 0);
+    transition: background .2s ease-in-out; }
+    .skills .skill-container .skill span {
+      float: right;
+      color: #004ba8; }
+      .skills .skill-container .skill span i {
+        margin-left: 0;
+        transition: margin-left .2s ease-in-out; }
+    .skills .skill-container .skill:hover {
+      background: rgba(0, 75, 168, 0.1); }
+      .skills .skill-container .skill:hover span i {
+        margin-left: 2px; }
 
 .education .location {
   color: #004ba8; }

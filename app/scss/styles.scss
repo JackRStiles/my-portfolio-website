@@ -12,12 +12,33 @@
 }
 
 .skills {
-    .skill {
+    .skill-container {
         text-align: left;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
 
-        span {
-            float: right;
-            color: $brand-color;
+        .skill {
+            background: scale-color($brand-color, $alpha: -100%);
+            transition: background .2s ease-in-out;
+
+            span {
+                float: right;
+                color: $brand-color;
+
+                i {
+                    margin-left: 0;
+                    transition: margin-left .2s ease-in-out;
+                }
+            }
+
+            &:hover {
+                background: scale-color($brand-color, $alpha: -90%);
+
+                span i {
+                    margin-left: 2px;
+                }
+            }
         }
     }
 }
