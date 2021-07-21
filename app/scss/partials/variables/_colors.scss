@@ -1,0 +1,25 @@
+$brand : #004ba8;
+
+$darkest : hsl(213, 100%, 10%);
+$dark : hsl(213, 100%, 25%);
+$middle : hsl(213, 100%, 33%);
+$light : hsl(213, 100%, 50%);
+$lightest : hsl(213, 100%, 90%);
+
+$font-color-black : #000;
+$font-color-white : #fff;
+
+.brand {
+    background: $brand;
+}
+
+.brand-gradient {
+    background: $middle;
+    background: linear-gradient(0deg, $dark, $middle, $light);
+    color: $font-color-white;
+}
+
+.font-gradient {
+    color: $middle;
+    color: linear-gradient(0deg, $dark, $middle, $light);
+}
