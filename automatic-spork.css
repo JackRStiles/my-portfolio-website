@@ -1,0 +1,314 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #FFF;
+    color: #35323a;
+}
+
+body, button, input, optgroup, select, textarea {
+    font-family: 'Karla', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* COLOURS */
+.is-brand-background {
+    background: #85ca77;
+}
+
+.is-brand-text {
+    color: #85ca77;
+}
+
+.is-light-background {
+    background: #FFF;
+}
+
+.is-light-text {
+    color: #FFF;
+}
+
+.is-light-background--alt {
+    background:  #f8f9f9 ;
+}
+
+.is-dark-background {
+    background: #35323a;
+}
+
+.is-dark-text {
+    color: #35323a;
+}
+
+.has-brand-border--top {
+    border-top: solid 4px #85ca77;
+}
+
+.content a {
+    font-weight: 900;
+    text-decoration:none;
+    border-bottom: 2px solid #85ca77;
+    color: #35323a;
+    transition: background-color 0.3s cubic-bezier(.33,.66,.66,1);
+  }
+  
+.content a:hover {
+    background-color: rgba(133, 202, 119, .5);
+  }
+
+/* TYPOGRAPHY */
+.title {
+    font-size: 3rem;
+    margin-left: -1px;
+    font-weight: 900;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+h2,
+.content h2 {
+    color: #85ca77;
+    font-size: 2rem;
+    font-weight: 900;
+    
+}
+
+h3,
+.content h3 {
+    font-size: 1.25rem;
+    color: #85ca77
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: unset;
+}
+
+.navbar-brand {
+    justify-content: space-between;
+    z-index: 5;
+    position: inherit;
+}
+
+.navbar-brand a {
+    margin: 0 8px;
+    height: 50px;
+}
+
+.navbar-brand img {
+    width: 50px;
+}
+
+a.navbar-item {
+    font-weight: 900;
+    transition: all .3s;
+    color: #85ca77;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a.navbar-item:hover {
+    color: #FFF;
+    background-color: unset;
+}
+
+.navbar-burger {
+    color: #FFF;
+}
+
+.navbar-burger.is-active {
+    color: #85ca77;
+}
+
+.navbar-menu.is-active {
+    position: absolute;
+    width: 100%;
+    height: calc(180px + 52px);
+    margin-top: -52px;
+    text-align: center;
+}
+
+@media screen and (max-width:1023px) {
+    .navbar-menu {
+        padding: 0;
+        background: rgba(53, 50, 58, 0.95);
+        border-bottom: 2px solid #85ca77;
+    }
+
+    a.navbar-item {
+        padding: 15px 0;
+    }
+
+    .navbar-end {
+        border-top: solid 1px rgba(133, 202, 119, .1);
+        margin-top: 52px;
+        padding: 10px 0;
+    }
+}
+
+/* HERO */
+.hero {
+    background-image: url('/wp-content/themes/automatic-spork/img/Peterborough--Craig-McGonigle.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: -52px;
+    height: 100vh;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(53, 50, 58, 0.749);
+    z-index: 1;
+}
+
+.hero-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hero .navbar, .hero-body, .hero-foot {
+    z-index: 2;
+}
+
+@media screen and (max-width: 1023px) {
+    .hero {
+        height: 50vh;
+    }
+
+    .hero::after {
+        height: 50vh;
+    } 
+}
+
+/* ABOUT */
+#about .image {
+    width: 200px;
+}
+
+/* SKILLS */
+.devicons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.devicon {
+    display: flex;
+    flex-direction: column;
+}
+
+.devicon:hover {
+    color: #85ca77;
+    transition: all .3s;
+}
+
+.devicon i {
+    font-size: 4rem;
+}
+
+.devicon p {
+    cursor: default;
+}
+
+/* PROJECTS */
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 30%;
+    height: 210px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.card-content {
+    padding: 1rem;
+    height: 160px;
+}
+
+.card .tags {
+    position: absolute;
+    bottom: 60px;
+}
+
+.card-footer {
+    height: 50px;
+}
+
+.card-footer-item {
+    width: 100%;
+}
+
+.card-footer-item i {
+    margin-right: 5px;
+}
+
+@media screen and (max-width:1023px) {
+    .card {
+        width: 45%;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .card {
+        width: 100%;
+    }
+}
+
+/* CONTACT */
+footer {
+    color: #FFF;
+}
+
+footer .content a {
+    color: #85ca77;
+    border-bottom: none;
+    transition: color .3s ease-in-out;
+}
+
+footer .content a:hover {
+    color: #fff;
+    background: none;
+}
+
+/* ANIMATIONS */
+.scroll-animation {
+    animation: scroll-animation 1s ease-in-out infinite;
+}
+
+@keyframes scroll-animation {
+    0%, 20%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(5px);
+    }
+    60% {
+        transform: translateY(-2px);
+    }
+}
+
+.slide-in-top {
+	-webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
