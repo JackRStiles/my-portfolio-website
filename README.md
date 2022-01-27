@@ -76,3 +76,4 @@ Then, based on the resposne it will either render a link to my GitHub profile if
 ```
 
 ## Future Improvements
+The biggest improvement I want to make it to have move of the content pulled from WordPress itself and not hardcoded into the template.
