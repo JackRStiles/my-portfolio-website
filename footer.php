@@ -12,20 +12,32 @@
 ?>
 
 	<footer id="colophon" class="site-footer section is-dark-background has-brand-border--top">
-		<div class="content has-text-centered">
-			<div class="contact">
-				<p>
-					<a href="https://twitter.com/ItsJackStiles" target="_blank"><i class="fab fa-2x fa-twitter-square mx-1"></i></a>	
-					<a href="https://www.instagram.com/itsjackstiles/" target="_blank"><i class="fab fa-2x fa-instagram-square mx-1"></i></a>
-					<a href="https://www.linkedin.com/in/itsjackstiles/" target="_blank"><i class="fab fa-2x fa-linkedin mx-1"></i></a>
-					<a href="mailto:jackrstiles@outlook.com"><i class="fas fa-2x fa-envelope-square mx-1"></i></a>
-				</p>
-			</div>
-			<div class="site-info">
-				<p>Built with <a href="https://bulma.io/" target="_blank">Bulma</a> and powered by <a href="https://wordpress.org/" target="_blank">WordPress</a> </p>
-			</div>
-			<div class="copy">
-				<p>&copy; <?php echo date("Y"); ?></p>
+		<div class="container">
+			<div class="columns content">
+				<div class="column">
+					<p>
+						<b>Want To Chat?</b><br>
+						Try using one of these methods to reach me. I am not availble for freelance work at this time, but I am open to full-time job offers.
+					</p>
+				</div>
+				<div class="column contact">
+					<p>
+						<a href="https://twitter.com/ItsJackStiles" target="_blank"><i class="fab fa-twitter-square mx-1"></i>@ItsJackStiles</a><br>
+						<a href="https://www.instagram.com/itsjackstiles/" target="_blank"><i class="fab fa-instagram-square mx-1"></i>@ItsJackStiles</a><br>
+						<a href="https://www.linkedin.com/in/itsjackstiles/" target="_blank"><i class="fab fa-linkedin mx-1"></i>@ItsJackStiles</a><br>
+						<a href="mailto:jackrstiles@outlook.com"><i class="fas fa-envelope-square mx-1"></i>jackrstiles@outlook.com</a>
+					</p>
+				</div>
+				<div class="column issue">
+					<p>
+						<b>Found A Bug?</b><br>
+						Head over to the repo for this project on GitHub and <a href="https://github.com/JackRStiles/portfolio-website/issues/new" target="_blank">log an issue</a>.
+					</p>
+				</div>
+				<div class="column site-info">
+					<p>&copy; <?php echo date("Y"); ?> Jack Stiles</p>
+					<p>This site was made with <a href="https://bulma.io/" target="_blank">Bulma</a> and is powered by <a href="https://wordpress.org/" target="_blank">WordPress</a>.</p>
+				</div>
 			</div>
 		</div>
 	</footer>

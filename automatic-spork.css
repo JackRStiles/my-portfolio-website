@@ -295,6 +295,7 @@ a.navbar-item:hover {
 /* CONTACT */
 footer {
     color: #FFF;
+    font-size: .9rem;
 }
 
 footer .content a {
