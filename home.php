@@ -32,7 +32,7 @@
     <div class="columns">
       <div class="column">
         <h2>About</h2>
-        <p>My journey as a web developer started <?php echo (date("Y")- 2008); ?>  years ago when I began university. At that time I was torn between software development and web development, luckily my first year exposed me to both and helped me decide I wanted to be a web developer. Throughout the rest of university I chose modules and units that I felt would help me. After graduation I toyed with the idea of setting myself up as a freelance developer but opted to pursue a career as a developer for an established company instead. Since then I have been steadily employed as a web developer and don’t regret my choice all those years ago.</p>
+        <p>My journey as a web developer started <?php echo (date("Y")- 2008); ?>  years ago when I began university. At that time I was torn between software development and web development, luckily my first year exposed me to both and helped me decide I wanted to be a web developer. Throughout the rest of university I chose modules and units that I felt would help me. After graduation I toyed with the idea of setting myself up as a freelance developer but opted to pursue a career as a developer for an established company instead.</p>
         <p>I am a proud and passionate individual who likes things to be lined up just right. My biggest hobbies are video games, tabletop games, photography, and music. I also enjoy exploring forests and ruins when given the chance.</p>
       </div>
     </div>
