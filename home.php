@@ -1,5 +1,5 @@
-<?php $config = include('config.php'); ?>
 <?php
+  $config = include('config.php');
   $username = str_replace('"', '', json_encode($config->github_username));
   $key      = str_replace('"', '', json_encode($config->github_key)); 
   $curl     = curl_init();
@@ -29,7 +29,7 @@
 
 <section id="about" class="section is-light-background--alt has-brand-border--top">
   <div class="container content">
-    <div class="columns has-text-centered">
+    <div class="columns">
       <div class="column">
         <h2>About</h2>
         <p>My journey as a web developer started <?php echo (date("Y")- 2008); ?>  years ago when I began university. At that time I was torn between software development and web development, luckily my first year exposed me to both and helped me decide I wanted to be a web developer. Throughout the rest of university I chose modules and units that I felt would help me. After graduation I toyed with the idea of setting myself up as a freelance developer but opted to pursue a career as a developer for an established company instead. Since then I have been steadily employed as a web developer and don’t regret my choice all those years ago.</p>
@@ -41,55 +41,55 @@
 
 <section id="skills" class="section">
   <div class="container content">
-    <div class="columns has-text-centered">
+    <div class="columns ">
       <div class="column">
         <h2>Skills</h2>
         <p>Since I started as a web developer all those years ago, i've used a vast number of languages and technologies spanning both front-end and back-end development. Whilst I am improving my back-end skills to help me as a full-stack developer, I've found my stride as a front-end developer and enjoy using JavaScript and JavaScript frameworks such as React.</p>
-        <p>The following represent my current and preferred toolkit, though it is not an exhaustive list of my skills.</p>
-        <div class="devicons columns">
+        <p>The following are what I would consider my current toolkit, however it is by no means an exhaustive list of my skills.</p>
+        <div class="devicons columns has-text-centered">
           <div class="devicon column is-one-fifth is-one-third-mobile">
             <i class="devicon-html5-plain "></i>
-            <p>HTML (5)</p>
+            <p>HTML<span class="muted">5</span></p>
           </div>
           <div class="devicon column is-one-fifth is-one-third-mobile">
             <i class="devicon-css3-plain"></i>
-            <p>CSS (3)</p>
-          </div>
-          <div class="devicon column is-one-fifth is-one-third-mobile">
-            <i class="devicon-sass-original"></i>
-            <p>Sass</p>
+            <p>CSS<span class="muted">3</span></p>
           </div>
           <div class="devicon column is-one-fifth is-one-third-mobile">
             <i class="devicon-bulma-plain"></i>
-              <p>Bulma</p>
+            <p>Bulma<span class="muted">0.9</span></p>
           </div>
           <div class="devicon column is-one-fifth is-one-third-mobile">
             <i class="devicon-javascript-plain"></i>
-            <p>JavaScript</p>
-          </div>
-          <div class="devicon column is-one-fifth is-one-third-mobile">
-            <i class="devicon-react-original"></i>
-            <p>React</p>
+            <p>JavaScript<span class="muted">ES6</span></p>
           </div>
           <div class="devicon column is-one-fifth is-one-third-mobile">
             <i class="devicon-php-plain"></i>
-            <p>PHP</p>
+            <p>PHP<span class="muted">7.4</span></p>
           </div>
           <div class="devicon column is-one-fifth is-one-third-mobile">
             <i class="devicon-mysql-plain"></i>
             <p>MySQL</p>
           </div>
           <div class="devicon column is-one-fifth is-one-third-mobile">
+            <i class="devicon-sass-original"></i>
+            <p>Sass</p>
+          </div>
+          <div class="devicon column is-one-fifth is-one-third-mobile">
             <i class="devicon-gulp-plain"></i>
             <p>Gulp.js</p>
           </div>
           <div class="devicon column is-one-fifth is-one-third-mobile">
-            <i class="devicon-amazonwebservices-plain"></i>
-            <p>AWS</p>
+            <i class="devicon-npm-original-wordmark"></i>
+            <p>NPM</p>
           </div>
           <div class="devicon column is-one-fifth is-one-third-mobile">
-            <i class="devicon-git-plain"></i>
-            <p>Git</p>
+            <i class="devicon-apache-plain"></i>  
+            <p>Apache</p>
+          </div>
+          <div class="devicon column is-one-fifth is-one-third-mobile">
+            <i class="devicon-amazonwebservices-plain"></i>
+            <p>AWS</p>
           </div>
           <div class="devicon column is-one-fifth is-one-third-mobile">
             <i class="devicon-github-original"></i>
@@ -106,6 +106,38 @@
           <div class="devicon column is-one-fifth is-one-third-mobile">
             <i class="devicon-photoshop-plain"></i>
             <p>Photoshop</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="columns has-text-centered mt-6">
+      <div class="column">
+        <h3>Learning</h3>
+        <p>The world of web development is constantly evolving and in an effort to keep up I'm teaching myself the following</p>
+        <div class="devicons devicons--small columns">
+          <div class="devicon column is-one-sixth is-one-third-mobile">
+            <i class="devicon-react-plain "></i>
+            <p>React</p>
+          </div>
+          <div class="devicon column is-one-sixth is-one-third-mobile">
+            <i class="devicon-vuejs-plain"></i>
+            <p>Vue</p>
+          </div>
+          <div class="devicon column is-one-sixth is-one-third-mobile">
+            <i class="devicon-express-original"></i>
+            <p>Express</p>
+          </div>
+          <div class="devicon column is-one-sixth is-one-third-mobile">
+            <i class="devicon-nodejs-plain"></i>
+            <p>Node</p>
+          </div>
+          <div class="devicon column is-one-sixth is-one-third-mobile">
+            <i class="devicon-mongodb-plain"></i>
+            <p>MongoDB</p>
+          </div>
+          <div class="devicon column is-one-sixth is-one-third-mobile">
+            <i class="devicon-nginx-original"></i>
+            <p>NGINX</p>
           </div>
         </div>
       </div>
@@ -136,7 +168,9 @@
             </div>
             <footer class="card-footer">
                 <a class="card-footer-item" href="<?= $value['html_url'] ?>" target="_blank"><i class="fab fa-github"></i>View Repo</a>
-                <a class="card-footer-item" href="<?= $value['homepage'] ?>" target="_blank"><i class="fas fa-desktop"></i>View Demo</a>
+                <?php if ($value['homepage']) : ?>
+                  <a class="card-footer-item" href="<?= $value['homepage'] ?>" target="_blank"><i class="fas fa-desktop"></i>View Demo</a>
+                <?php endif; ?>
             </footer>
           </div>
         <?php 

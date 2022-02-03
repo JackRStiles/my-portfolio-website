@@ -8,12 +8,15 @@ body {
 }
 
 body, button, input, optgroup, select, textarea {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
 }
 
-h1, h2, h3, h4 {
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
+.content h1, .content h2, .content h3, .content h4, h1, h2, h3, h4 {
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    text-align: center;
 }
 
 /* COLOURS */
@@ -50,7 +53,7 @@ h1, h2, h3, h4 {
 }
 
 .content a {
-    font-weight: 900;
+    font-weight: 500;
     text-decoration:none;
     border-bottom: 2px solid #85ca77;
     color: #35323a;
@@ -63,13 +66,14 @@ h1, h2, h3, h4 {
 
 /* TYPOGRAPHY */
 .title {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-left: -1px;
-    font-weight: 900;
+    font-weight: 500;
+	letter-spacing: -1.5px
 }
 
 .subtitle {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.5rem;
 }
 
@@ -77,7 +81,7 @@ h2,
 .content h2 {
     color: #85ca77;
     font-size: 2rem;
-    font-weight: 900;
+    font-weight: 500;
     
 }
 
@@ -101,6 +105,8 @@ h3,
 .navbar-brand a {
     margin: 0 8px;
     height: 50px;
+    position: absolute;
+    right: -5px;
 }
 
 .navbar-brand img {
@@ -108,7 +114,7 @@ h3,
 }
 
 a.navbar-item {
-    font-weight: 900;
+    font-weight: 500;
     transition: all .3s;
     color: #85ca77;
     font-family: 'Montserrat', sans-serif;
@@ -212,7 +218,7 @@ a.navbar-item:hover {
     flex-direction: column;
 }
 
-.devicon:hover {
+.devicon i:hover {
     color: #85ca77;
     transition: all .3s;
 }
@@ -221,8 +227,19 @@ a.navbar-item:hover {
     font-size: 4rem;
 }
 
+.devicons--small .devicon i {
+    font-size: 2rem;
+}
+
 .devicon p {
     cursor: default;
+    font-weight: 500;
+}
+.devicon p .muted {
+    color: #757575;
+    display: block;
+    font-size: .8rem;
+    margin-top: -5px;
 }
 
 /* PROJECTS */
@@ -312,3 +329,58 @@ footer .content a:hover {
 	-webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
+ /* The side navigation menu */
+ .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #85ca77;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+	position: absolute;
+	top: -2px;
+	right: 15px;
+	font-size: 50px;
+	margin-left: 50px;
+	padding: 0;
+	line-height: 1;
+}
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  } 
+
+  #backToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      border-color: #85ca77;
+      z-index: 5;
+      display: none;
+  }

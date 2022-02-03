@@ -31,6 +31,10 @@
 	</footer>
 </div>
 
+<button id="backToTop" class="button is-brand-background" onclick="topFunction()">
+	<i class="fa-solid fa-arrow-up"></i>
+</button>
+
 <?php wp_footer(); ?>
 
 	<script src="https://kit.fontawesome.com/f448df1bee.js" crossorigin="anonymous"></script>
