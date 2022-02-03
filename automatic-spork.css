@@ -196,7 +196,19 @@ a.navbar-item:hover {
 
     .hero::after {
         height: 50vh;
-    } 
+    }
+
+    .hero .column {
+        padding: 0;
+    }
+    
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .title:not(.is-spaced) + .subtitle {
+        margin-top: -1rem;
+    }
 }
 
 /* ABOUT */
@@ -384,4 +396,22 @@ footer .content a:hover {
       border-color: #85ca77;
       z-index: 5;
       display: none;
+  }
+
+  .reveal{
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 450px) {
+    #about .reveal {
+        transform: translateY(0);
+        opacity: 1;
+    }
   }

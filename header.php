@@ -57,9 +57,9 @@
   <!-- Mobile Menu -->
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#about" onclick="closeNav()">About</a>
-    <a href="#skills" onclick="closeNav()">Skills</a>
-    <a href="#projects" onclick="closeNav()">Projects</a>
+    <a href="#about" class="reveal--left" onclick="closeNav()">About</a>
+    <a href="#skills" class="reveal--left" onclick="closeNav()">Skills</a>
+    <a href="#projects" class="reveal--left" onclick="closeNav()">Projects</a>
   </div>
 </nav>
 

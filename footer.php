@@ -35,8 +35,8 @@
 					</p>
 				</div>
 				<div class="column site-info">
-					<p>&copy; <?php echo date("Y"); ?> Jack Stiles</p>
 					<p>This site was made with <a href="https://bulma.io/" target="_blank">Bulma</a> and is powered by <a href="https://wordpress.org/" target="_blank">WordPress</a>.</p>
+					<p>&copy; <?php echo date("Y"); ?> Jack Stiles</p>
 				</div>
 			</div>
 		</div>

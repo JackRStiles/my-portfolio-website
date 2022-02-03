@@ -27,8 +27,8 @@
 
 <?php get_header(); ?>
 
-<section id="about" class="section is-light-background--alt has-brand-border--top">
-  <div class="container content">
+<section id="about" class="section is-medium is-light-background--alt has-brand-border--top">
+  <div class="container content reveal">
     <div class="columns">
       <div class="column">
         <h2>About</h2>
@@ -39,14 +39,14 @@
   </div>
 </section>
 
-<section id="skills" class="section">
-  <div class="container content">
+<section id="skills" class="section is-medium">
+  <div class="container content reveal">
     <div class="columns ">
       <div class="column">
         <h2>Skills</h2>
         <p>Since I started as a web developer all those years ago, i've used a vast number of languages and technologies spanning both front-end and back-end development. Whilst I am improving my back-end skills to help me as a full-stack developer, I've found my stride as a front-end developer and enjoy using JavaScript and JavaScript frameworks such as React.</p>
         <p>The following are what I would consider my current toolkit, however it is by no means an exhaustive list of my skills.</p>
-        <div class="devicons columns has-text-centered">
+        <div class="devicons columns has-text-centered reveal">
           <div class="devicon column is-one-fifth is-one-third-mobile">
             <i class="devicon-html5-plain "></i>
             <p>HTML<span class="muted">5</span></p>
@@ -69,52 +69,52 @@
           </div>
           <div class="devicon column is-one-fifth is-one-third-mobile">
             <i class="devicon-mysql-plain"></i>
-            <p>MySQL</p>
+            <p>MySQL<span class="muted">8.0</span></p>
           </div>
           <div class="devicon column is-one-fifth is-one-third-mobile">
             <i class="devicon-sass-original"></i>
-            <p>Sass</p>
+            <p>Sass<span class="muted">1.49</span></p>
           </div>
           <div class="devicon column is-one-fifth is-one-third-mobile">
             <i class="devicon-gulp-plain"></i>
-            <p>Gulp.js</p>
+            <p>Gulp.js<span class="muted">4.0</span></p>
           </div>
           <div class="devicon column is-one-fifth is-one-third-mobile">
             <i class="devicon-npm-original-wordmark"></i>
-            <p>NPM</p>
+            <p>NPM<span class="muted">8.4</span></p>
           </div>
           <div class="devicon column is-one-fifth is-one-third-mobile">
             <i class="devicon-apache-plain"></i>  
-            <p>Apache</p>
+            <p>Apache2<span class="muted">2.4</span></p>
           </div>
           <div class="devicon column is-one-fifth is-one-third-mobile">
             <i class="devicon-amazonwebservices-plain"></i>
-            <p>AWS</p>
+            <p>AWS<span class="muted">Lightsail</span></p>
           </div>
           <div class="devicon column is-one-fifth is-one-third-mobile">
             <i class="devicon-github-original"></i>
-            <p>Github</p>
+            <p>Github<span class="muted">&amp; Git</span></p>
           </div>
           <div class="devicon column is-one-fifth is-one-third-mobile">
             <i class="devicon-ubuntu-plain"></i>
-            <p>Ubuntu</p>
+            <p>Ubuntu<span class="muted">20.04</span></p>
           </div>
           <div class="devicon column is-one-fifth is-one-third-mobile">
             <i class="devicon-wordpress-plain"></i>
-            <p>WordPress</p>
+            <p>WordPress<span class="muted">5.9</span></p>
           </div>
           <div class="devicon column is-one-fifth is-one-third-mobile">
             <i class="devicon-photoshop-plain"></i>
-            <p>Photoshop</p>
+            <p>Photoshop<span class="muted">CC</span></p>
           </div>
         </div>
       </div>
     </div>
-    <div class="columns has-text-centered mt-6">
+    <div class="columns has-text-centered mt-6 reveal">
       <div class="column">
         <h3>Learning</h3>
         <p>The world of web development is constantly evolving and in an effort to keep up I'm teaching myself the following</p>
-        <div class="devicons devicons--small columns">
+        <div class="devicons devicons--small columns reveal">
           <div class="devicon column is-one-sixth is-one-third-mobile">
             <i class="devicon-react-plain "></i>
             <p>React</p>
@@ -145,8 +145,8 @@
   </div>
 </section>
 
-<section id="projects" class="section is-light-background--alt">
-  <div class="container content">
+<section id="projects" class="section is-medium is-light-background--alt">
+  <div class="container content reveal">
     <div class="columns has-text-centered">
       <div class="column">
         <h2>Projects</h2>
@@ -156,7 +156,7 @@
         <?php else :           
             foreach ($response as $value) : 
         ?>
-          <div class="card">
+          <div class="card reveal">
             <div class="card-content">
               <h3><?= str_replace('-', ' ', $value['name']); ?></h3>
               <p><?= $value['description'] ?></p>
